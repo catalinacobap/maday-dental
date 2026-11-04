@@ -49,13 +49,21 @@ def fragment(source): return Parser(source).root.children
 def find(root, predicate): return next(node for node in root.walk() if predicate(node))
 def node(tag, **attrs): return Node(tag, attrs.items())
 
-origin = os.environ.get('SITE_URL','').rstrip('/')
+# Resolve the production origin. Prefer an explicit SITE_URL; otherwise fall back to the
+# domain Vercel assigns to the production deployment. Vercel exposes these hostnames WITHOUT
+# a scheme (e.g. "my-project.vercel.app" or a custom production domain), so prepend https://
+# before validating. VERCEL_PROJECT_PRODUCTION_URL is used (not VERCEL_URL): it is the stable
+# production hostname, so canonical/hreflang/OG/sitemap stay consistent even on preview builds.
+raw_origin = (os.environ.get('SITE_URL') or os.environ.get('VERCEL_PROJECT_PRODUCTION_URL') or '').strip()
+if raw_origin and '://' not in raw_origin:
+    raw_origin = 'https://' + raw_origin
+origin = raw_origin.rstrip('/')
 if origin:
     parsed = urlparse(origin)
     if parsed.scheme != 'https' or not parsed.hostname or parsed.hostname in ('localhost','127.0.0.1','::1') or parsed.path or parsed.query or parsed.fragment or parsed.username:
         raise SystemExit('SITE_URL must be the actual production HTTPS origin, without a path or credentials.')
 elif '--production' in sys.argv:
-    raise SystemExit('Missing SITE_URL. Set the real production domain before building for publication.')
+    raise SystemExit('Missing SITE_URL. Set the real production domain (or let Vercel provide VERCEL_PROJECT_PRODUCTION_URL) before building for publication.')
 
 locales = {lang:json.loads((ROOT/'locales'/f'{lang}.json').read_text()) for lang in ('es','en')}
 paths = {'es': {'home':'/es/','services':'/es/servicios/'}, 'en': {'home':'/en/','services':'/en/services/'}}
