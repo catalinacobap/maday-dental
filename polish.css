@@ -1,0 +1,65 @@
+:root{--control-border:#d7e2eb;--interaction-duration:180ms;--control-border-hover:#9dbed3;--surface-soft:#eef7fb;--hero-cta:#a9d9f1;--control-radius:10px;--control-height:40px}
+.button,.filter-chips button,.service-card,.listing-card,.nav-links a,a,.search-reset,.faq-item{transition:background-color var(--interaction-duration),color var(--interaction-duration),border-color var(--interaction-duration)}
+.button{height:var(--control-height);min-height:var(--control-height);border-radius:var(--control-radius);font-weight:600;box-shadow:none}.button:hover{transform:none;filter:none;box-shadow:none}.button-primary:hover{background:#06356c}.hero .button-primary:hover{background:#8fcae9}.button-light:hover{background:#edf6fb}
+.button-outline-dark,.button-outline{border:1px solid var(--control-border);border-radius:var(--control-radius)}.button-outline-dark:hover{background:#e2f0f8;border-color:var(--control-border-hover)}.hero .button-outline{border-color:rgba(255,255,255,.42)}.button-outline:hover{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.72)}.button-icon{width:26px;height:26px;border-radius:6px}.button-icon svg{width:16px;height:16px}
+.filter-chips button:hover{background:#d3e8f4;box-shadow:none}.filter-chips button[aria-pressed=true]:hover{background:#06356c}.service-card:hover,.service-card.featured:hover,.listing-card:hover{background:#dcecf6;transform:none;box-shadow:none}.nav-links a:not(.button):hover{color:#bce2f6}.listing-card a:hover,.review-summary a:hover{color:#185f87;text-decoration:underline;text-underline-offset:3px}
+.eyebrow{height:27px;padding:0 11px;gap:7px;font-size:10.5px;font-weight:500;letter-spacing:.025em;box-shadow:none}.eyebrow svg{width:15px;height:15px;padding:0;background:none;border-radius:0}
+.stats{grid-template-columns:1fr .75fr .8fr 1.7fr;min-height:58px;padding:10px 18px;border-radius:12px;box-shadow:none}.stats>div>span{gap:6px}.stats strong{font-size:20px;font-weight:600}.stats small{font-size:13px;font-weight:400}.stats>div{border-color:#e5ecf1;padding:0 12px;min-height:30px}.stats>div>span{align-items:baseline}.info-cards>div{grid-template-columns:40px 1fr;column-gap:15px;min-height:66px;padding:11px 15px}.info-cards svg{width:40px;height:40px;padding:10px}.info-cards strong,.faq-item button{font-weight:600}.faq-item button{padding:17px 20px}.search-reset{border-radius:6px;display:grid;place-items:center}.search-reset[hidden]{display:none}.search-reset:hover{background:#eaf5fb}.search-wrap input{border-color:var(--control-border)}.search-wrap input:focus{outline:2px solid #79c4ed45;outline-offset:1px;border-color:#8db8d2}.search-wrap input::-webkit-search-cancel-button{appearance:none;display:none}
+@media(max-width:680px){.stats{padding:12px 10px;gap:14px 8px}.stats strong{font-size:19px}.stats small{font-size:12px}.stats>div>span{flex-wrap:nowrap;align-items:center}.stats>div{min-width:0}.stats small{overflow-wrap:normal}.stats>div:last-child>span{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.hero-image img,.doctor-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}.hero-image img{object-position:50% 60%}.doctor-photo img{object-position:center}
+
+.hero .button-primary{background:var(--hero-cta);color:var(--navy)}.hero .button-primary:hover{background:#8fcae9}.hero-actions .button{padding-right:14px;gap:9px;height:40px}.hero .button-outline .button-icon{background:#ffffff12;color:white}.doctor,.location{background:var(--surface-soft)}.location h2{white-space:nowrap}.location h2 em{display:inline}.listing-card .service-cta{height:36px;min-height:36px;padding:0 12px;gap:8px;font-size:13px;font-weight:600;color:var(--navy);background:white;border:1px solid var(--control-border);border-radius:9px;text-decoration:none}.listing-card .service-cta:hover{background:#e2f0f8;border-color:var(--control-border-hover);color:var(--navy);text-decoration:none}.service-cta svg{width:15px;height:15px}.stats small{line-height:1.35}.stats strong{font-size:20px}
+@media(max-width:1100px){.stats{grid-template-columns:1fr 1fr;gap:14px}.stats>div:nth-child(odd){border-left:0}.stats>div{justify-content:flex-start}.stats>div>span{flex-wrap:nowrap}}@media(max-width:680px){.stats{grid-template-columns:.9fr 1.1fr;gap:14px 4px;padding:12px 8px}.stats>div{padding:0 6px}.stats>div>span{flex-wrap:wrap;gap:5px}.stats strong{font-size:19px}}
+.brand-mark{border:0;border-radius:0;background:transparent}.brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
+.header-actions{display:flex;align-items:center;justify-content:flex-end;gap:16px;justify-self:end}.language-switcher{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:12px;font-weight:500;color:#a5bfd2}.language-switcher a{padding:6px 2px}.language-switcher a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:4px}.language-switcher a:hover{color:#79c4ed}.nav>.brand{width:36px}.header-actions .header-cta{grid-area:auto}.nav .header-actions{grid-column:3;grid-row:1}.nav .header-actions .language-switcher{position:static}.nav-links{white-space:nowrap}
+@media(max-width:1150px){.nav .header-actions{grid-column:2}.nav .menu-toggle{grid-column:3}.header-actions .header-cta{display:inline-flex}}
+@media(max-width:680px){.nav{grid-template-columns:1fr auto auto}.nav .header-actions{grid-column:2}.header-actions .header-cta{display:none}.nav .menu-toggle{grid-column:3}.header-actions{gap:8px}.stats>div>span{min-width:0}.hero-actions .button{white-space:normal}.filter-chips{max-width:100%}.listing-card,.hero-copy,.doctor-copy,.review-summary{min-width:0}.hero h1{overflow-wrap:normal}}
+
+/* ---- Typography: Inter base, Libre Bodoni for the celeste accent texts ---- */
+body,button,input,select,textarea,.hero h1,h1,h2,h3,h4,.service-card h3,.review-summary h3,.doctor h2,.rating strong,.location-copy h3,.catalog h3,.portrait-placeholder span{font-family:Inter,system-ui,-apple-system,sans-serif}
+em,.kicker,.light-kicker{font-family:"Libre Bodoni",Georgia,serif}
+em{font-weight:500;font-style:italic}
+.kicker,.light-kicker{text-transform:none;letter-spacing:.005em;font-size:14px;font-weight:500;font-style:italic}
+
+/* ---- Reviews carousel with patient photos ---- */
+.review-summary{display:flex;flex-direction:column}
+.review-head{display:flex;align-items:center;gap:13px;margin-bottom:15px}
+.review-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:0 0 auto;box-shadow:0 2px 9px #03245924}
+.review-name{display:block;font:600 15px Inter,sans-serif;color:var(--ink);letter-spacing:-.01em}
+.review-date{font-size:12px;color:var(--muted)}
+.review-stars{color:#f5a524;letter-spacing:2px;font-size:16px;line-height:1;margin-bottom:13px}
+.review-text{font-size:14.5px;line-height:1.62;color:#2c3a46;margin:0 0 18px;min-height:140px}
+.review-summary .review-source{margin-top:auto;font-size:12px;font-weight:700;color:#338cc3;display:inline-flex;gap:7px;align-items:center}
+@media(max-width:680px){.review-text{min-height:0}}
+
+/* ---- Clickable service cards ---- */
+.listing-card.is-clickable{cursor:pointer}
+.service-card:hover,.service-card.featured:hover,.listing-card:hover{background:#dcecf6;transform:translateY(-2px);box-shadow:0 10px 26px #03245912}
+
+/* ---- Stats bar: celeste value centered and sized like its label ---- */
+.stats>div>span{align-items:center}
+.stats strong{font-size:15px;font-weight:600;line-height:1.2}
+.stats small{font-size:14px}
+@media(max-width:680px){.stats strong{font-size:14px}}
+
+/* ---- Elegant service search (soft pill) ---- */
+.search-wrap{max-width:480px;border:1px solid #e6edf3;border-radius:999px;background:#fff;box-shadow:0 14px 36px #0324590f}
+.search-wrap input{height:58px;border:0;border-radius:999px;background:transparent;font-size:15.5px;padding:0 52px}
+.search-wrap input:focus{outline:none;box-shadow:none;border:0}
+.search-wrap:focus-within{border-color:#c2d6e8;box-shadow:0 14px 40px #0324591c}
+.search-wrap>svg{left:21px;top:20px;width:18px;height:18px;color:#607689}
+.search-wrap input::placeholder{color:#9aa7b4}
+.search-reset{top:13px;right:14px}
+
+/* ---- Review decorative quote mark ---- */
+.review-mark{width:32px;height:32px;color:#c4cde8;margin-bottom:12px}
+.review-mark svg{width:32px;height:32px;display:block}
+
+/* ---- Hero eyebrow: refined translucent chip instead of solid white pill ---- */
+.eyebrow{height:auto;padding:7px 15px;gap:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:#d7e6f2;font-family:Inter,sans-serif;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;border-radius:999px}
+.eyebrow svg{width:16px;height:16px;color:#9fd0ec;background:none;padding:0;border-radius:0}
+
+/* ---- Header active link: outlined white pill ---- */
+.nav-links a[aria-current=page]{color:#fff;border:1px solid rgba(255,255,255,.42);border-radius:999px;padding:7px 16px;line-height:1}
+.nav-links a[aria-current=page]:hover{color:#fff;background:rgba(255,255,255,.08)}

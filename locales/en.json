@@ -1,0 +1,277 @@
+{
+  "locale": "en",
+  "clinic": {
+    "booking": "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ073WTDp8LIxwPw8ZrNipKTQ86OwJcyAo053Maxvn0KhjKyzCCA0cZQBji-NvK54elF4GcO0ePS",
+    "whatsapp": "https://wa.link/zv1xgg",
+    "maps": "https://maps.app.goo.gl/nrbAGGtPuwfUmhJj9"
+  },
+  "categories": [
+    "All",
+    "General & Preventive Care",
+    "Cosmetic Dentistry",
+    "Prosthetics & Rehabilitation",
+    "Other Treatments"
+  ],
+  "services": [
+    [
+      "Dental Assessment",
+      "We assess your dental health and discuss the options for your needs.",
+      "General & Preventive Care",
+      "consultation examination checkup"
+    ],
+    [
+      "Dental Cleaning / Prophylaxis",
+      "We remove plaque and tartar to help care for your teeth and gums.",
+      "General & Preventive Care",
+      "cleaning hygiene scale polish"
+    ],
+    [
+      "Dental Fillings & Restorations",
+      "We restore teeth affected by decay or damage.",
+      "General & Preventive Care",
+      "filling resin cavity restoration"
+    ],
+    [
+      "Gum Treatment",
+      "We assess your gums and discuss suitable care options.",
+      "General & Preventive Care",
+      "gum periodontal gingivitis"
+    ],
+    [
+      "Root Canal Treatment / Endodontics",
+      "We assess treatment of the inside of the tooth based on your needs.",
+      "Other Treatments",
+      "root canal nerve endodontic"
+    ],
+    [
+      "Tooth Extractions",
+      "We evaluate tooth extraction when needed.",
+      "Other Treatments",
+      "extraction remove tooth"
+    ],
+    [
+      "Wisdom Tooth Extraction",
+      "Wisdom tooth assessment and care, subject to availability or referral.",
+      "Other Treatments",
+      "wisdom teeth extraction surgery"
+    ],
+    [
+      "Dental X-rays",
+      "Diagnostic images to support your dental assessment.",
+      "General & Preventive Care",
+      "x-ray radiograph"
+    ],
+    [
+      "Teeth Whitening",
+      "We assess options to improve the color of your teeth.",
+      "Cosmetic Dentistry",
+      "whitening bleaching"
+    ],
+    [
+      "Cosmetic Restorations",
+      "Options to care for the appearance and function of your teeth.",
+      "Cosmetic Dentistry",
+      "cosmetic resin fillings"
+    ],
+    [
+      "Dental Crowns",
+      "Restorations that cover and protect a tooth according to its condition.",
+      "Prosthetics & Rehabilitation",
+      "crown cap"
+    ],
+    [
+      "Fixed Prosthetics",
+      "Fixed options to restore dental function and appearance.",
+      "Prosthetics & Rehabilitation",
+      "fixed bridge prosthesis"
+    ],
+    [
+      "Removable Prosthetics",
+      "Removable options tailored to each patient’s needs.",
+      "Prosthetics & Rehabilitation",
+      "removable denture prosthesis"
+    ],
+    [
+      "Orthodontics",
+      "Options subject to professional assessment and availability.",
+      "Other Treatments",
+      "orthodontic braces aligners"
+    ],
+    [
+      "Retainers",
+      "Assessment of retainers according to your needs.",
+      "Other Treatments",
+      "retainer orthodontic"
+    ],
+    [
+      "Dental Care for Children",
+      "Dental care tailored to children’s needs. We do not treat babies.",
+      "General & Preventive Care",
+      "children kids pediatric"
+    ],
+    [
+      "Dental Care for Older Adults",
+      "Personalized dental care for older adults.",
+      "General & Preventive Care",
+      "senior elderly older adult"
+    ],
+    [
+      "Emergency Dental Care",
+      "Contact us to check availability for urgent dental care.",
+      "Other Treatments",
+      "emergency urgent pain"
+    ],
+    [
+      "Dental Implant Assessment & Referral",
+      "We assess your case and refer the procedure to the appropriate professional.",
+      "Prosthetics & Rehabilitation",
+      "implant referral surgery"
+    ]
+  ],
+  "ui": {
+    "booking": "Book an Appointment",
+    "whatsapp": "Contact Us on WhatsApp",
+    "allServices": "View All Services",
+    "audience": "for children, adults and older adults",
+    "mapTitle": "Location of Clínica Dental Dra. Maday Pallares González",
+    "google": "Google review",
+    "previousReview": "Previous review",
+    "nextReview": "Next review",
+    "specialty": "General & Cosmetic Dentistry",
+    "clearSearch": "Clear search",
+    "suggestions": "Suggested treatments",
+    "treatment": "treatment",
+    "treatments": "treatments",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "text": {
+    "Clínica Dental": "Dental Clinic",
+    "Dra. Maday Pallares G.": "Dr. Maday Pallares G.",
+    "Inicio, Clínica Dental Dra. Maday Pallares": "Home, Dr. Maday Pallares Dental Clinic",
+    "Navegación principal": "Main navigation",
+    "Servicios": "Services",
+    "La doctora": "The Dentist",
+    "Opiniones": "Reviews",
+    "Preguntas frecuentes": "Frequently Asked Questions",
+    "Ubicación": "Location",
+    "Abrir menú": "Open menu",
+    "Agendar valoración": "Book an Appointment",
+    "Consultar por WhatsApp": "Contact Us on WhatsApp",
+    "Odontología general y estética": "General & Cosmetic Dentistry",
+    "Dentista en": "Dentist in",
+    "San Carlos": "San Carlos",
+    "Recupera tu salud. Realza tu sonrisa.": "Restore your dental health. Enhance your smile.",
+    "San Carlos, Alajuela, Costa Rica": "San Carlos, Alajuela, Costa Rica",
+    "Atención odontológica en la clínica de la Dra. Maday Pallares en San Carlos": "Dental care at Dr. Maday Pallares’s clinic in San Carlos",
+    "Citas el mismo día": "Same-day appointments",
+    "Según disponibilidad": "Subject to availability",
+    "Atención de emergencias": "Emergency Dental Care",
+    "Consultá por WhatsApp": "Contact us on WhatsApp",
+    "+27 años": "27+ years",
+    "+300": "300+",
+    "de experiencia": "of experience",
+    "pacientes": "patients",
+    "en Google": "on Google",
+    "Atención": "Care",
+    "a niños, adultos y adultos mayores": "for children, adults and older adults",
+    "Conoce nuestros": "Explore Our",
+    "servicios dentales": "Dental Services",
+    "Limpieza dental": "Dental Cleaning",
+    "Calzas y restauraciones": "Dental Fillings & Restorations",
+    "Prótesis dentales": "Dental Prosthetics",
+    "Estética dental": "Cosmetic Dentistry",
+    "Eliminamos el sarro y la placa acumulada para ayudar a mantener tus dientes y encías saludables.": "We remove plaque and tartar buildup to help keep your teeth and gums healthy.",
+    "Restauramos dientes afectados por caries o daños, cuidando su función y apariencia natural.": "We restore teeth affected by decay or damage, taking care of their function and natural appearance.",
+    "Opciones de prótesis fijas y removibles para ayudarte a recuperar la función y estética de tu sonrisa.": "Fixed and removable prosthetic options to help restore your smile’s function and appearance.",
+    "Tratamientos como blanqueamientos y restauraciones estéticas para mejorar la apariencia de tus dientes.": "Treatments such as whitening and cosmetic restorations to improve the appearance of your teeth.",
+    "Ver todos los servicios": "View All Services",
+    "Te atiende la": "Meet",
+    "Dra. Maday Pallares": "Dr. Maday Pallares",
+    "Dra. Maday Pallares González en su consultorio dental en San Carlos": "Dr. Maday Pallares González in her dental office in San Carlos",
+    "Una atención que empieza escuchándote": "Care that starts with listening",
+    "Con más de 27 años de experiencia, la Dra. Maday Pallares brinda atención odontológica a niños, adultos y adultos mayores en San Carlos, Alajuela, Costa Rica. Su enfoque es escuchar tus necesidades, explicarte las alternativas de tratamiento y ayudarte a elegir la opción más adecuada para tu salud dental.": "With over 27 years of experience, Dr. Maday Pallares provides dental care for children, adults and older adults in San Carlos, Alajuela, Costa Rica. She listens to your needs, explains your treatment options and helps you choose the most suitable approach for your dental health.",
+    "Odontología general": "General dentistry",
+    "y estética": "and cosmetic care",
+    "Atención personalizada": "Personalized care",
+    "para toda la familia": "for the whole family",
+    "La confianza se construye con atención": "Trust begins with care",
+    "Lo que dicen nuestros": "What Our",
+    "Consultá las opiniones verificadas y la reputación de la clínica directamente en Google.": "Read patient reviews and see the clinic’s rating directly on Google.",
+    "Calificación en Google": "Google rating",
+    "Calificación en Google · +49 reseñas": "Google rating · 49+ reviews",
+    "Dra. Maday Pallares González": "Dr. Maday Pallares González",
+    "Ver en Google Maps": "View on Google Maps",
+    "Ver en Waze": "View on Waze",
+    "servicios": "Services",
+    "Cuidamos tu salud bucal y la estética de tu sonrisa.": "We care for your oral health and the beauty of your smile.",
+    "Ver opiniones en Google": "Read Reviews on Google",
+    "4.9 ★ en Google": "4.9 ★ on Google",
+    "La mejor forma de conocer las experiencias de nuestros pacientes es visitar nuestra ficha oficial y leer sus opiniones originales.": "Visit our official Google listing to read our patients’ experiences in their own words.",
+    "Abrir ficha de Google": "View Google Listing",
+    "Antes de tu cita": "Before your appointment",
+    "Preguntas": "Frequently Asked",
+    "frecuentes": "Questions",
+    "Si no encontrás la respuesta que buscás, escribinos directamente por WhatsApp.": "If you can’t find the answer you need, contact us directly on WhatsApp.",
+    "Estamos cerca de vos": "Find us nearby",
+    "Cómo": "Find",
+    "llegar": "Us",
+    "Cómo llegar": "Get Directions",
+    "Clínica Dental Dra. Maday Pallares G.": "Clínica Dental Dra. Maday Pallares G.",
+    "Santa Clara, Florencia, San Carlos, Alajuela, Costa Rica, 21002.": "Santa Clara, Florencia, San Carlos, Alajuela, Costa Rica, 21002.",
+    "Abrir ubicación en Google Maps": "Open Location in Google Maps",
+    "Horario de atención": "Opening hours",
+    "Lunes a viernes": "Monday–Friday",
+    "Sábado": "Saturday",
+    "Domingo": "Sunday",
+    "Cerrado": "Closed",
+    "9:30 a.m. – 6:30 p.m.": "9:30 AM – 6:30 PM",
+    "10:00 a.m. – 3:00 p.m.": "10:00 AM – 3:00 PM",
+    "Lun – Vie": "Mon–Fri",
+    "Odontología general y estética en San Carlos, Alajuela, Costa Rica.": "General and cosmetic dentistry in San Carlos, Alajuela, Costa Rica.",
+    "Explorá": "Explore",
+    "Contactá": "Contact",
+    "Horarios": "Hours",
+    "Nuestros": "Our",
+    "Encontrá el tratamiento que necesitás y conocé las opciones disponibles en nuestra clínica.": "Find the treatment you need and explore the options available at our clinic.",
+    "Buscar tratamientos": "Search treatments",
+    "Buscar tratamiento...": "Search for a treatment...",
+    "Filtrar servicios por categoría": "Filter services by category",
+    "No encontramos tratamientos con esa búsqueda.": "No treatments match your search.",
+    "Limpiar búsqueda": "Clear search",
+    "Ubicación de Clínica Dental Dra. Maday Pallares González": "Location of Clínica Dental Dra. Maday Pallares González"
+  },
+  "faqs": [
+    [
+      "Is there a fee for an assessment, and how are treatment costs determined?",
+      "The assessment fee depends on the type of consultation. After evaluating your case, we explain your treatment options and the associated costs. You can contact us on WhatsApp before booking."
+    ],
+    [
+      "How can I book an appointment? Do you offer emergency care?",
+      "You can <a href=\"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ073WTDp8LIxwPw8ZrNipKTQ86OwJcyAo053Maxvn0KhjKyzCCA0cZQBji-NvK54elF4GcO0ePS\">book your assessment online</a> or contact us on <a href=\"https://wa.link/zv1xgg\">WhatsApp</a>. We also offer emergency care and same-day appointments when available."
+    ],
+    [
+      "Do you treat children, adults and older adults?",
+      "Yes, we provide dental care for children, adults and older adults. We do not treat babies."
+    ],
+    [
+      "How long does an appointment take, and what if I am worried about pain?",
+      "The length of your appointment depends on the procedure, although many appointments last about an hour. Before treatment, we explain what to expect and the options available to manage discomfort."
+    ],
+    [
+      "Do you offer financing or accept insurance?",
+      "We treat private patients and do not offer formal financing. During your assessment, we can discuss treatment options that suit your needs and budget."
+    ]
+  ],
+  "seo": {
+    "home": {
+      "title": "Dentist in San Carlos, Costa Rica | Dr. Maday Pallares",
+      "description": "Dental clinic in San Carlos, Costa Rica. Over 27 years of experience in general dentistry, restorations, prosthetics, and cosmetic dental care. Book an appointment."
+    },
+    "services": {
+      "title": "Dental Services in San Carlos | Dr. Maday Pallares",
+      "description": "Explore dental care in San Carlos, Costa Rica, including cleanings, fillings, prosthetics and cosmetic treatments. Find your treatment and book an assessment."
+    }
+  }
+}

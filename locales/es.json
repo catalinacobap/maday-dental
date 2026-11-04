@@ -1,0 +1,271 @@
+{
+  "locale": "es-CR",
+  "clinic": {
+    "booking": "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ073WTDp8LIxwPw8ZrNipKTQ86OwJcyAo053Maxvn0KhjKyzCCA0cZQBji-NvK54elF4GcO0ePS",
+    "whatsapp": "https://wa.link/zv1xgg",
+    "maps": "https://maps.app.goo.gl/nrbAGGtPuwfUmhJj9"
+  },
+  "faqs": [
+    [
+      "¿La valoración tiene costo y cómo se calculan los precios?",
+      "El costo de la valoración depende del tipo de consulta. Después de evaluar tu caso, te explicamos las opciones de tratamiento y el presupuesto correspondiente. Podés consultarnos por WhatsApp antes de agendar."
+    ],
+    [
+      "¿Cómo puedo agendar una cita? ¿Atienden emergencias?",
+      "Podés <a href=\"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ073WTDp8LIxwPw8ZrNipKTQ86OwJcyAo053Maxvn0KhjKyzCCA0cZQBji-NvK54elF4GcO0ePS\">agendar tu valoración en línea</a> o escribirnos por <a href=\"https://wa.link/zv1xgg\">WhatsApp</a>. También atendemos emergencias y ofrecemos citas el mismo día cuando hay disponibilidad."
+    ],
+    [
+      "¿Atienden niños, adultos y adultos mayores?",
+      "Sí, ofrecemos atención odontológica para niños, adultos y adultos mayores. No atendemos bebés."
+    ],
+    [
+      "¿Cuánto dura una cita y qué pasa si tengo miedo al dolor?",
+      "La duración depende del procedimiento, aunque muchas citas duran aproximadamente una hora. Antes del tratamiento te explicamos qué podés esperar y las opciones disponibles para manejar las molestias."
+    ],
+    [
+      "¿Ofrecen financiamiento o trabajan con aseguradoras?",
+      "Trabajamos con pacientes privados y no ofrecemos financiamiento formal. Durante la valoración podemos conversar sobre opciones de tratamiento que se adapten a tus necesidades y presupuesto."
+    ]
+  ],
+  "services": [
+    [
+      "Valoración odontológica",
+      "Revisamos tu salud dental y conversamos sobre las opciones para tu caso.",
+      "General y prevención",
+      "consulta revisión"
+    ],
+    [
+      "Limpieza dental / profilaxis",
+      "Eliminamos placa y sarro para ayudar a cuidar dientes y encías.",
+      "General y prevención",
+      "limpieza"
+    ],
+    [
+      "Calzas y restauraciones",
+      "Restauramos dientes afectados por caries o daños.",
+      "General y prevención",
+      "calza resina caries"
+    ],
+    [
+      "Tratamiento de encías",
+      "Valoramos la salud de tus encías y las alternativas de atención.",
+      "General y prevención",
+      "encía periodontal"
+    ],
+    [
+      "Tratamiento de nervios / endodoncia",
+      "Valoramos el tratamiento del interior del diente según cada caso.",
+      "Otros tratamientos",
+      "nervio conducto"
+    ],
+    [
+      "Extracciones dentales",
+      "Evaluamos la extracción dental cuando es necesaria.",
+      "Otros tratamientos",
+      "extracción sacar diente"
+    ],
+    [
+      "Extracción de cordales",
+      "Valoración de cordales y atención según disponibilidad o referencia.",
+      "Otros tratamientos",
+      "muela juicio cirugía"
+    ],
+    [
+      "Radiografías dentales",
+      "Imágenes de apoyo para la valoración odontológica.",
+      "General y prevención",
+      "rayos x"
+    ],
+    [
+      "Blanqueamiento",
+      "Valoramos opciones para mejorar el color de tus dientes.",
+      "Estética dental",
+      "blanqueamiento dental"
+    ],
+    [
+      "Restauraciones estéticas",
+      "Opciones para cuidar la apariencia y función dental.",
+      "Estética dental",
+      "resinas calzas"
+    ],
+    [
+      "Coronas",
+      "Restauraciones que cubren y protegen el diente según su condición.",
+      "Prótesis y rehabilitación",
+      "corona"
+    ],
+    [
+      "Prótesis fija",
+      "Alternativas fijas para recuperar la función y estética dental.",
+      "Prótesis y rehabilitación",
+      "puente"
+    ],
+    [
+      "Prótesis removible",
+      "Opciones removibles adaptadas a las necesidades de cada paciente.",
+      "Prótesis y rehabilitación",
+      "dentadura"
+    ],
+    [
+      "Ortodoncia",
+      "Opciones sujetas a valoración profesional y disponibilidad.",
+      "Otros tratamientos",
+      "brackets alineadores"
+    ],
+    [
+      "Retenedores",
+      "Valoración de retenedores según tus necesidades.",
+      "Otros tratamientos",
+      "ortodoncia"
+    ],
+    [
+      "Atención odontológica para niños",
+      "Atención dental para niños, según sus necesidades. No atendemos bebés.",
+      "General y prevención",
+      "infantil"
+    ],
+    [
+      "Atención odontológica para adultos mayores",
+      "Atención dental personalizada para adultos mayores.",
+      "General y prevención",
+      "adulto mayor"
+    ],
+    [
+      "Atención de emergencias",
+      "Consultá la atención disponible para situaciones dentales urgentes.",
+      "Otros tratamientos",
+      "urgencia dolor"
+    ],
+    [
+      "Valoración y referencia para implantes",
+      "Valoramos tu caso y referimos el procedimiento al profesional correspondiente.",
+      "Prótesis y rehabilitación",
+      "implante cirugía"
+    ]
+  ],
+  "categories": [
+    "Todos",
+    "General y prevención",
+    "Estética dental",
+    "Prótesis y rehabilitación",
+    "Otros tratamientos"
+  ],
+  "ui": {
+    "booking": "Agendar valoración",
+    "whatsapp": "Consultar por WhatsApp",
+    "allServices": "Ver todos los servicios",
+    "audience": "a niños, adultos y adultos mayores",
+    "mapTitle": "Ubicación de Clínica Dental Dra. Maday Pallares González",
+    "google": "Opinión de Google",
+    "previousReview": "Opinión anterior",
+    "nextReview": "Opinión siguiente",
+    "specialty": "Odontología general y estética",
+    "clearSearch": "Limpiar búsqueda",
+    "suggestions": "Tratamientos sugeridos",
+    "treatment": "tratamiento",
+    "treatments": "tratamientos",
+    "language": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "text": {
+    "Clínica Dental": "Clínica Dental",
+    "Dra. Maday Pallares G.": "Dra. Maday Pallares G.",
+    "Inicio, Clínica Dental Dra. Maday Pallares": "Inicio, Clínica Dental Dra. Maday Pallares",
+    "Navegación principal": "Navegación principal",
+    "Servicios": "Servicios",
+    "La doctora": "La doctora",
+    "Opiniones": "Opiniones",
+    "Preguntas frecuentes": "Preguntas frecuentes",
+    "Ubicación": "Ubicación",
+    "Abrir menú": "Abrir menú",
+    "Agendar valoración": "Agendar valoración",
+    "Consultar por WhatsApp": "Consultar por WhatsApp",
+    "Odontología general y estética": "Odontología general y estética",
+    "Dentista en": "Dentista en",
+    "San Carlos": "San Carlos",
+    "Recupera tu salud. Realza tu sonrisa.": "Recupera tu salud. Realza tu sonrisa.",
+    "San Carlos, Alajuela, Costa Rica": "San Carlos, Alajuela, Costa Rica",
+    "Atención odontológica en la clínica de la Dra. Maday Pallares en San Carlos": "Atención odontológica en la clínica de la Dra. Maday Pallares en San Carlos",
+    "Citas el mismo día": "Citas el mismo día",
+    "Según disponibilidad": "Según disponibilidad",
+    "Atención de emergencias": "Atención de emergencias",
+    "Consultá por WhatsApp": "Consultá por WhatsApp",
+    "+27 años": "+27 años",
+    "+300": "+300",
+    "de experiencia": "de experiencia",
+    "pacientes": "pacientes",
+    "en Google": "en Google",
+    "Atención": "Atención",
+    "a niños, adultos y adultos mayores": "a niños, adultos y adultos mayores",
+    "Conoce nuestros": "Conoce nuestros",
+    "servicios dentales": "servicios dentales",
+    "Limpieza dental": "Limpieza dental",
+    "Calzas y restauraciones": "Calzas y restauraciones",
+    "Prótesis dentales": "Prótesis dentales",
+    "Estética dental": "Estética dental",
+    "Eliminamos el sarro y la placa acumulada para ayudar a mantener tus dientes y encías saludables.": "Eliminamos el sarro y la placa acumulada para ayudar a mantener tus dientes y encías saludables.",
+    "Restauramos dientes afectados por caries o daños, cuidando su función y apariencia natural.": "Restauramos dientes afectados por caries o daños, cuidando su función y apariencia natural.",
+    "Opciones de prótesis fijas y removibles para ayudarte a recuperar la función y estética de tu sonrisa.": "Opciones de prótesis fijas y removibles para ayudarte a recuperar la función y estética de tu sonrisa.",
+    "Tratamientos como blanqueamientos y restauraciones estéticas para mejorar la apariencia de tus dientes.": "Tratamientos como blanqueamientos y restauraciones estéticas para mejorar la apariencia de tus dientes.",
+    "Ver todos los servicios": "Ver todos los servicios",
+    "Te atiende la": "Te atiende la",
+    "Dra. Maday Pallares": "Dra. Maday Pallares",
+    "Dra. Maday Pallares González en su consultorio dental en San Carlos": "Dra. Maday Pallares González en su consultorio dental en San Carlos",
+    "Una atención que empieza escuchándote": "Una atención que empieza escuchándote",
+    "Con más de 27 años de experiencia, la Dra. Maday Pallares brinda atención odontológica a niños, adultos y adultos mayores en San Carlos, Alajuela, Costa Rica. Su enfoque es escuchar tus necesidades, explicarte las alternativas de tratamiento y ayudarte a elegir la opción más adecuada para tu salud dental.": "Con más de 27 años de experiencia, la Dra. Maday Pallares brinda atención odontológica a niños, adultos y adultos mayores en San Carlos, Alajuela, Costa Rica. Su enfoque es escuchar tus necesidades, explicarte las alternativas de tratamiento y ayudarte a elegir la opción más adecuada para tu salud dental.",
+    "Odontología general": "Odontología general",
+    "y estética": "y estética",
+    "Atención personalizada": "Atención personalizada",
+    "para toda la familia": "para toda la familia",
+    "La confianza se construye con atención": "La confianza se construye con atención",
+    "Lo que dicen nuestros": "Lo que dicen nuestros",
+    "Consultá las opiniones verificadas y la reputación de la clínica directamente en Google.": "Consultá las opiniones verificadas y la reputación de la clínica directamente en Google.",
+    "Calificación en Google": "Calificación en Google",
+    "Ver opiniones en Google": "Ver opiniones en Google",
+    "4.9 ★ en Google": "4.9 ★ en Google",
+    "La mejor forma de conocer las experiencias de nuestros pacientes es visitar nuestra ficha oficial y leer sus opiniones originales.": "La mejor forma de conocer las experiencias de nuestros pacientes es visitar nuestra ficha oficial y leer sus opiniones originales.",
+    "Abrir ficha de Google": "Abrir ficha de Google",
+    "Antes de tu cita": "Antes de tu cita",
+    "Preguntas": "Preguntas",
+    "frecuentes": "frecuentes",
+    "Si no encontrás la respuesta que buscás, escribinos directamente por WhatsApp.": "Si no encontrás la respuesta que buscás, escribinos directamente por WhatsApp.",
+    "Estamos cerca de vos": "Estamos cerca de vos",
+    "Cómo": "Cómo",
+    "llegar": "llegar",
+    "Cómo llegar": "Cómo llegar",
+    "Clínica Dental Dra. Maday Pallares G.": "Clínica Dental Dra. Maday Pallares G.",
+    "Santa Clara, Florencia, San Carlos, Alajuela, Costa Rica, 21002.": "Santa Clara, Florencia, San Carlos, Alajuela, Costa Rica, 21002.",
+    "Abrir ubicación en Google Maps": "Abrir ubicación en Google Maps",
+    "Horario de atención": "Horario de atención",
+    "Lunes a viernes": "Lunes a viernes",
+    "Sábado": "Sábado",
+    "Domingo": "Domingo",
+    "Cerrado": "Cerrado",
+    "9:30 a.m. – 6:30 p.m.": "9:30 a.m. – 6:30 p.m.",
+    "10:00 a.m. – 3:00 p.m.": "10:00 a.m. – 3:00 p.m.",
+    "Lun – Vie": "Lun – Vie",
+    "Odontología general y estética en San Carlos, Alajuela, Costa Rica.": "Odontología general y estética en San Carlos, Alajuela, Costa Rica.",
+    "Explorá": "Explorá",
+    "Contactá": "Contactá",
+    "Horarios": "Horarios",
+    "Nuestros": "Nuestros",
+    "Encontrá el tratamiento que necesitás y conocé las opciones disponibles en nuestra clínica.": "Encontrá el tratamiento que necesitás y conocé las opciones disponibles en nuestra clínica.",
+    "Buscar tratamientos": "Buscar tratamientos",
+    "Buscar tratamiento...": "Buscar tratamiento...",
+    "Filtrar servicios por categoría": "Filtrar servicios por categoría",
+    "No encontramos tratamientos con esa búsqueda.": "No encontramos tratamientos con esa búsqueda.",
+    "Limpiar búsqueda": "Limpiar búsqueda",
+    "Ubicación de Clínica Dental Dra. Maday Pallares González": "Ubicación de Clínica Dental Dra. Maday Pallares González"
+  },
+  "seo": {
+    "home": {
+      "title": "Dentista en San Carlos | Dra. Maday Pallares",
+      "description": "Clínica dental en San Carlos, Alajuela. Más de 27 años de experiencia en odontología general, restauraciones, prótesis y estética dental. Agendá tu valoración."
+    },
+    "services": {
+      "title": "Servicios Dentales en San Carlos | Dra. Maday Pallares",
+      "description": "Conocé nuestros servicios dentales en San Carlos, Alajuela: limpieza, calzas, prótesis y estética dental. Encontrá tu tratamiento y agendá una valoración."
+    }
+  }
+}
