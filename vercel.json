@@ -2,5 +2,22 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "npm run build",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/servicios",
+      "destination": "/es/#servicios",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicios",
+      "destination": "/es/#servicios",
+      "permanent": true
+    },
+    {
+      "source": "/en/services",
+      "destination": "/en/#servicios",
+      "permanent": true
+    }
+  ]
 }

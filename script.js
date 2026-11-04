@@ -1,17 +1,6 @@
 const CLINIC = PAGE_DATA.clinic;
 const WHATSAPP_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.46 0 .1 5.36.1 11.95c0 2.1.55 4.16 1.59 5.97L0 24l6.23-1.63a11.9 11.9 0 0 0 5.81 1.48h.01C18.64 23.85 24 18.49 24 11.9c0-3.18-1.24-6.17-3.48-8.42ZM12.05 21.83h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.69.97.98-3.6-.24-.37a9.9 9.9 0 1 1 8.36 4.59Zm5.45-7.42c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.29-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a9.02 9.02 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.59-.49-.51-.67-.52h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.41.25-.7.25-1.3.18-1.42-.08-.12-.28-.2-.58-.35Z"/></svg>';
 const FAQS = PAGE_DATA.faqs;
-// Keep the existing homepage markup compatible while simplifying its featured cards.
-document.querySelectorAll('.service-number, .service-card > a, .services .section-heading .kicker, .services .section-heading > p').forEach(element => element.remove());
-const catalogButton = document.querySelector('#catalog-toggle');
-if (catalogButton) {
-  const link = document.createElement('a');
-  link.className = 'button button-outline-dark';
-  link.href = PAGE_DATA.routes.services;
-  link.textContent = t('allServices');
-  catalogButton.replaceWith(link);
-}
-document.querySelector('#catalogo')?.remove();
 const familyStatistic = document.querySelector('.stats > div:last-child small');
 if (familyStatistic) familyStatistic.textContent = t('audience');
 const mapPattern = document.querySelector('.map-pattern');

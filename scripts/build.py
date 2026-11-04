@@ -1,6 +1,7 @@
 """Prerender the existing two templates. No runtime framework or build dependencies."""
 import copy
 import html
+import hashlib
 import json
 import os
 import re
@@ -66,7 +67,7 @@ elif '--production' in sys.argv:
     raise SystemExit('Missing SITE_URL. Set the real production domain (or let Vercel provide VERCEL_PROJECT_PRODUCTION_URL) before building for publication.')
 
 locales = {lang:json.loads((ROOT/'locales'/f'{lang}.json').read_text()) for lang in ('es','en')}
-paths = {'es': {'home':'/es/','services':'/es/servicios/'}, 'en': {'home':'/en/','services':'/en/services/'}}
+paths = {'es': {'home':'/es/','services':'/es/#servicios'}, 'en': {'home':'/en/','services':'/en/#servicios'}}
 missing = set()
 
 def prepare(page):
@@ -91,7 +92,7 @@ def prepare(page):
         if n.tag=='link' and 'fonts.googleapis.com/css2' in n.attrs.get('href',''):
             n.attrs['href']='https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap'
         if n.attrs.get('id')=='catalog-toggle':
-            n.tag='a'; n.attrs={'class':'button button-outline-dark','href':'/servicios/'}; n.children=['Ver todos los servicios']
+            n.tag='a'; n.attrs={'class':'button button-primary all-services-cta','href':'/servicios/'}; n.children=['Ver todos los servicios']
         if n.tag=='a' and 'maps.app.goo.gl' in n.attrs.get('href',''): n.attrs['href']=locales['es']['clinic']['maps']
         # Keep the exact physical street address. Only marketing positioning changes.
         for i,child in enumerate(n.children):
@@ -174,30 +175,50 @@ def render(lang,page):
         accordion=find(root,lambda n:n.attrs.get('id')=='accordion')
         for i,(question,answer) in enumerate(data['faqs']):
             accordion.children.extend(fragment(f'<div class="faq-item{" open" if i==0 else ""}"><button type="button" aria-expanded="{str(i==0).lower()}" aria-controls="answer-{i}"><span>{html.escape(question)}</span><i data-lucide="plus"></i></button><div class="faq-answer" id="answer-{i}"{" hidden" if i else ""}><p>{answer}</p></div></div>'))
-    else:
         grid=find(root,lambda n:n.has('services-list'))
-        for title,description,category,_ in data['services']:
-            emergency=title==data['services'][17][0]; link=data['clinic']['whatsapp' if emergency else 'booking']; label=data['ui']['whatsapp' if emergency else 'booking']
-            grid.children.extend(fragment(f'<article class="listing-card"><span class="listing-icon" aria-hidden="true"></span><span class="listing-category">{html.escape(category)}</span><h2>{html.escape(title)}</h2><p>{html.escape(description)}</p><a class="button button-outline-dark service-cta" href="{link}">{label}</a></article>'))
-        find(root,lambda n:n.has('results-count')).children=[f"19 {data['ui']['treatments']}"]
+        for service_index,(title,description,category,_) in enumerate(data['services']):
+            link=data['clinic']['booking']; label=data['ui']['serviceCardBooking']
+            detail = '<path d="M13 11h6m-3-3v6"/>' if service_index % 3 == 0 else '<path d="m11 11 3 2 6-2"/>' if service_index % 3 == 1 else ''
+            icon = '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 6c-3-2-8-2-10 2-2 4 0 8 1 11s1 8 4 8c2 0 2-7 5-7s3 7 5 7c3 0 3-5 4-8s3-7 1-11c-2-4-7-4-10-2Z"/>'+detail+'</svg>'
+            arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>'
+            grid.children.extend(fragment(f'<a class="listing-card" href="{html.escape(link, quote=True)}" aria-labelledby="service-title-{service_index} service-booking-{service_index}"><span class="listing-icon" aria-hidden="true">{icon}</span><span class="listing-category">{html.escape(category)}</span><h3 id="service-title-{service_index}">{html.escape(title)}</h3><p>{html.escape(description)}</p><span class="service-booking-hint" id="service-booking-{service_index}">{html.escape(label)}{arrow}</span></a>'))
+        container=find(root,lambda n:n.attrs.get('id')=='servicios').children[0]
+        container.children.extend(fragment(f'<div class="center-actions services-actions"><button type="button" class="button button-outline-dark" id="load-more-services" aria-controls="services-list" hidden>{html.escape(data["ui"]["loadMoreServices"])}<span class="load-more-arrow" aria-hidden="true">↓</span></button></div>'))
+        chips=find(root,lambda n:n.has('filter-chips'))
+        for i,category in enumerate(data['categories']):
+            chips.children.append(Node('button',[('type','button'),('aria-pressed',str(i==0).lower()),('aria-controls','services-list')],[category]))
+        find(root,lambda n:n.has('results-count')).children=[f"{len(data['services'])} {data['ui']['treatments']}"]
     metadata(find(root,lambda n:n.tag=='head'),lang,page,data)
     body=find(root,lambda n:n.tag=='body')
     payload={key:data[key] for key in ('locale','clinic','faqs','services','categories','ui')}
     payload.update(language=lang,page=page,routes=paths[lang])
     index=next(i for i,n in enumerate(body.children) if isinstance(n,Node) and n.tag=='script')
     body.children[index:index]=[Node('script',[('id','page-data'),('type','application/json')],[json.dumps(payload,ensure_ascii=False).replace('<','\\u003c')]),Node('script',[('src','/i18n.js')])]
+    # Changed assets get new URLs so browsers cannot reuse a previous implementation.
+    for element in root.walk():
+        attr = 'src' if element.tag == 'script' else 'href' if element.tag == 'link' and element.attrs.get('rel') == 'stylesheet' else None
+        url = element.attrs.get(attr, '') if attr else ''
+        if url.startswith('/') and (ROOT/url.lstrip('/')).is_file():
+            digest = hashlib.sha256((ROOT/url.lstrip('/')).read_bytes()).hexdigest()[:12]
+            element.attrs[attr] = url+'?v='+digest
     return '<!doctype html>\n'+root.render()
 
 for lang in ('es','en'):
-    for page in ('home','services'):
-        output=render(lang,page)
-        target=ROOT/paths[lang][page].strip('/')/'index.html'; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(output)
-        if lang=='es':
-            alias=ROOT/('index.html' if page=='home' else 'servicios/index.html'); alias.write_text(output)
+    output=render(lang,'home')
+    target=ROOT/paths[lang]['home'].strip('/')/'index.html'
+    target.parent.mkdir(parents=True,exist_ok=True); target.write_text(output)
+    if lang=='es': (ROOT/'index.html').write_text(output)
+    # Keep old bookmarks working on static hosts and the local development server.
+    destination=paths[lang]['services']
+    label=locales[lang]['ui']['allServices']
+    redirect=f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url={destination}"><title>{label}</title></head><body><a href="{destination}">{label}</a></body></html>'
+    legacy=ROOT/('es/servicios/index.html' if lang=='es' else 'en/services/index.html')
+    legacy.write_text(redirect)
+    if lang=='es': (ROOT/'servicios/index.html').write_text(redirect)
 if missing: raise SystemExit('Missing translations: '+repr(sorted(missing)))
-urls=[origin+paths[lang][page] for lang in paths for page in ('home','services')]
+urls=[origin+paths[lang]['home'] for lang in paths]
 xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 if origin: xml+=''.join('<url><loc>'+html.escape(url)+'</loc></url>' for url in urls)
 (ROOT/'sitemap.xml').write_text(xml+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\n'+('Allow: /\nDisallow: /templates/\nDisallow: /locales/\nDisallow: /scripts/\nSitemap: '+origin+'/sitemap.xml\n' if origin else 'Disallow: /\n'))
-print('Built four localized pages and two compatible aliases.' + (' Production SEO enabled.' if origin else ' Development build: noindex until SITE_URL is supplied.'))
+print('Built two localized home pages, root alias and legacy service redirects.' + (' Production SEO enabled.' if origin else ' Development build: noindex until SITE_URL is supplied.'))

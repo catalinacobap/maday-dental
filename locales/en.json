@@ -14,118 +14,70 @@
   ],
   "services": [
     [
-      "Dental Assessment",
-      "We assess your dental health and discuss the options for your needs.",
+      "Dental Cleaning",
+      "We remove tartar, plaque, debris and surface stains caused by food and tobacco. This treatment helps keep teeth and gums healthy, improves oral hygiene and leaves your mouth feeling clean and fresh.",
       "General & Preventive Care",
-      "consultation examination checkup"
-    ],
-    [
-      "Dental Cleaning / Prophylaxis",
-      "We remove plaque and tartar to help care for your teeth and gums.",
-      "General & Preventive Care",
-      "cleaning hygiene scale polish"
+      "prophylaxis hygiene tartar"
     ],
     [
       "Dental Fillings & Restorations",
-      "We restore teeth affected by decay or damage.",
+      "We restore teeth affected by decay, fractures or wear, restoring their shape, function and natural appearance. We use high-quality restorative materials to achieve aesthetic and functional results tailored to each patient.",
       "General & Preventive Care",
-      "filling resin cavity restoration"
+      "filling resin cavity"
     ],
     [
-      "Gum Treatment",
-      "We assess your gums and discuss suitable care options.",
-      "General & Preventive Care",
-      "gum periodontal gingivitis"
+      "Dental Prosthetics",
+      "We offer fixed and removable dental prosthetics to replace missing teeth, restore chewing function and improve the appearance of your smile. Each treatment is tailored to your individual needs.",
+      "Prosthetics & Rehabilitation",
+      "prosthetics dentures rehabilitation"
     ],
     [
-      "Root Canal Treatment / Endodontics",
-      "We assess treatment of the inside of the tooth based on your needs.",
-      "Other Treatments",
-      "root canal nerve endodontic"
-    ],
-    [
-      "Tooth Extractions",
-      "We evaluate tooth extraction when needed.",
-      "Other Treatments",
-      "extraction remove tooth"
-    ],
-    [
-      "Wisdom Tooth Extraction",
-      "Wisdom tooth assessment and care, subject to availability or referral.",
-      "Other Treatments",
-      "wisdom teeth extraction surgery"
-    ],
-    [
-      "Dental X-rays",
-      "Diagnostic images to support your dental assessment.",
-      "General & Preventive Care",
-      "x-ray radiograph"
-    ],
-    [
-      "Teeth Whitening",
-      "We assess options to improve the color of your teeth.",
       "Cosmetic Dentistry",
-      "whitening bleaching"
+      "We provide teeth whitening and cosmetic restorations, including veneers made from composite resin, lithium disilicate, feldspathic porcelain and zirconia. When suitable for your case, we also offer ultra-thin veneers that require no tooth preparation, aiming for a natural, balanced smile.",
+      "Cosmetic Dentistry",
+      "whitening veneers resin lithium disilicate porcelain zirconia"
     ],
     [
-      "Cosmetic Restorations",
-      "Options to care for the appearance and function of your teeth.",
-      "Cosmetic Dentistry",
-      "cosmetic resin fillings"
+      "Removable Dentures",
+      "We offer partial and full removable dentures made from a range of materials to suit each patient’s needs. These options replace missing teeth and help improve chewing, comfort and the appearance of your smile.",
+      "Prosthetics & Rehabilitation",
+      "partial full dentures"
+    ],
+    [
+      "Root Canal Treatment (Endodontics)",
+      "We treat teeth whose inner pulp tissue is affected by deep decay, infection or injury. Root canal treatment aims to relieve pain, treat any infection present and preserve the natural tooth whenever possible.",
+      "Other Treatments",
+      "root canal endodontics"
     ],
     [
       "Dental Crowns",
-      "Restorations that cover and protect a tooth according to its condition.",
+      "Crowns cover and protect weakened, fractured or extensively restored teeth, restoring their shape, strength and function. We offer a range of aesthetic materials for a natural-looking result suited to your needs.",
       "Prosthetics & Rehabilitation",
-      "crown cap"
+      "crown protection"
     ],
     [
-      "Fixed Prosthetics",
-      "Fixed options to restore dental function and appearance.",
+      "Fixed Dental Prosthetics",
+      "We offer fixed dental prosthetics to replace missing teeth and restore chewing function and the appearance of your smile. We work with a range of materials and treatment options, aiming for comfort, stability and a natural look.",
       "Prosthetics & Rehabilitation",
-      "fixed bridge prosthesis"
+      "bridge fixed prosthetics"
     ],
     [
-      "Removable Prosthetics",
-      "Removable options tailored to each patient’s needs.",
-      "Prosthetics & Rehabilitation",
-      "removable denture prosthesis"
-    ],
-    [
-      "Orthodontics",
-      "Options subject to professional assessment and availability.",
-      "Other Treatments",
-      "orthodontic braces aligners"
-    ],
-    [
-      "Retainers",
-      "Assessment of retainers according to your needs.",
-      "Other Treatments",
-      "retainer orthodontic"
-    ],
-    [
-      "Dental Care for Children",
-      "Dental care tailored to children’s needs. We do not treat babies.",
+      "Dental Assessment",
+      "We carry out a comprehensive assessment of your teeth, gums, soft tissues and supporting structures. This helps us identify potential problems, make a diagnosis and recommend a personalized treatment plan, with follow-up care as needed.",
       "General & Preventive Care",
-      "children kids pediatric"
+      "consultation examination diagnosis"
     ],
     [
-      "Dental Care for Older Adults",
-      "Personalized dental care for older adults.",
-      "General & Preventive Care",
-      "senior elderly older adult"
-    ],
-    [
-      "Emergency Dental Care",
-      "Contact us to check availability for urgent dental care.",
+      "Bruxism Management",
+      "We offer dental splints designed to suit each patient’s needs. These help protect teeth from wear associated with grinding and clenching (bruxism) and are selected based on an individual dental assessment.",
       "Other Treatments",
-      "emergency urgent pain"
+      "splint grinding clenching teeth"
     ],
     [
-      "Dental Implant Assessment & Referral",
-      "We assess your case and refer the procedure to the appropriate professional.",
-      "Prosthetics & Rehabilitation",
-      "implant referral surgery"
+      "Dental Retainers",
+      "We design custom retainers to help maintain the position of your teeth after orthodontic treatment. Each retainer is tailored to your needs, with specific care and wear instructions to help preserve your results.",
+      "Other Treatments",
+      "retainer orthodontics"
     ]
   ],
   "ui": {
@@ -144,7 +96,15 @@
     "treatments": "treatments",
     "language": "Language",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "previousServices": "Previous services",
+    "nextServices": "Next services",
+    "servicesCarousel": "Dental services",
+    "serviceCardBooking": "Tap the card to book an appointment",
+    "loadMoreServices": "Load more",
+    "serviceBooking": "Book an appointment",
+    "serviceContact": "Contact us",
+    "servicesShown": "Showing {visible} of {total} services"
   },
   "text": {
     "Clínica Dental": "Dental Clinic",
@@ -182,10 +142,6 @@
     "Calzas y restauraciones": "Dental Fillings & Restorations",
     "Prótesis dentales": "Dental Prosthetics",
     "Estética dental": "Cosmetic Dentistry",
-    "Eliminamos el sarro y la placa acumulada para ayudar a mantener tus dientes y encías saludables.": "We remove plaque and tartar buildup to help keep your teeth and gums healthy.",
-    "Restauramos dientes afectados por caries o daños, cuidando su función y apariencia natural.": "We restore teeth affected by decay or damage, taking care of their function and natural appearance.",
-    "Opciones de prótesis fijas y removibles para ayudarte a recuperar la función y estética de tu sonrisa.": "Fixed and removable prosthetic options to help restore your smile’s function and appearance.",
-    "Tratamientos como blanqueamientos y restauraciones estéticas para mejorar la apariencia de tus dientes.": "Treatments such as whitening and cosmetic restorations to improve the appearance of your teeth.",
     "Ver todos los servicios": "View All Services",
     "Te atiende la": "Meet",
     "Dra. Maday Pallares": "Dr. Maday Pallares",
@@ -240,7 +196,25 @@
     "Filtrar servicios por categoría": "Filter services by category",
     "No encontramos tratamientos con esa búsqueda.": "No treatments match your search.",
     "Limpiar búsqueda": "Clear search",
-    "Ubicación de Clínica Dental Dra. Maday Pallares González": "Location of Clínica Dental Dra. Maday Pallares González"
+    "Ubicación de Clínica Dental Dra. Maday Pallares González": "Location of Clínica Dental Dra. Maday Pallares González",
+    "Eliminamos sarro, placa bacteriana, residuos y manchas superficiales causadas por alimentos y tabaco. Este tratamiento ayuda a mantener dientes y encías saludables, mejorando la higiene bucal y proporcionando una agradable sensación de limpieza y frescura.": "We remove tartar, plaque, debris and surface stains caused by food and tobacco. This treatment helps keep teeth and gums healthy, improves oral hygiene and leaves your mouth feeling clean and fresh.",
+    "Restauramos dientes afectados por caries, fracturas o desgaste, recuperando su forma, función y apariencia natural. Utilizamos materiales restauradores de alta calidad para conseguir resultados estéticos y funcionales adaptados a cada paciente.": "We restore teeth affected by decay, fractures or wear, restoring their shape, function and natural appearance. We use high-quality restorative materials to achieve aesthetic and functional results tailored to each patient.",
+    "Ofrecemos soluciones de prótesis dentales fijas y removibles para reemplazar piezas perdidas, recuperar la función masticatoria y mejorar la estética de la sonrisa. Cada tratamiento se adapta a las necesidades particulares del paciente.": "We offer fixed and removable dental prosthetics to replace missing teeth, restore chewing function and improve the appearance of your smile. Each treatment is tailored to your individual needs.",
+    "Realizamos tratamientos de blanqueamiento y restauraciones estéticas, incluyendo carillas de resina, disilicato de litio, porcelana feldespática y zirconia. También ofrecemos opciones de carillas ultrafinas sin preparación dental cuando el caso lo permite, buscando sonrisas naturales y armoniosas.": "We provide teeth whitening and cosmetic restorations, including veneers made from composite resin, lithium disilicate, feldspathic porcelain and zirconia. When suitable for your case, we also offer ultra-thin veneers that require no tooth preparation, aiming for a natural, balanced smile.",
+    "Prótesis removibles": "Removable Dentures",
+    "Disponemos de prótesis removibles parciales y totales, elaboradas con diferentes materiales según las necesidades de cada paciente. Estas soluciones permiten reemplazar dientes ausentes y mejorar la masticación, la comodidad y la apariencia de la sonrisa.": "We offer partial and full removable dentures made from a range of materials to suit each patient’s needs. These options replace missing teeth and help improve chewing, comfort and the appearance of your smile.",
+    "Tratamiento de nervio (endodoncia)": "Root Canal Treatment (Endodontics)",
+    "Tratamos dientes cuyo tejido nervioso se encuentra afectado por caries profundas, infecciones o lesiones. La endodoncia busca aliviar el dolor, tratar la infección cuando está presente y conservar la pieza dental natural siempre que sea posible.": "We treat teeth whose inner pulp tissue is affected by deep decay, infection or injury. Root canal treatment aims to relieve pain, treat any infection present and preserve the natural tooth whenever possible.",
+    "Coronas dentales": "Dental Crowns",
+    "Las coronas cubren y protegen dientes debilitados, fracturados o muy restaurados, devolviéndoles su forma, resistencia y funcionalidad. Ofrecemos diferentes materiales estéticos para lograr un resultado natural según las necesidades del paciente.": "Crowns cover and protect weakened, fractured or extensively restored teeth, restoring their shape, strength and function. We offer a range of aesthetic materials for a natural-looking result suited to your needs.",
+    "Prótesis fija": "Fixed Dental Prosthetics",
+    "Ofrecemos alternativas de prótesis fijas para reemplazar dientes ausentes y recuperar la función masticatoria y la estética dental. Trabajamos con diferentes materiales y opciones de tratamiento, buscando comodidad, estabilidad y una apariencia natural.": "We offer fixed dental prosthetics to replace missing teeth and restore chewing function and the appearance of your smile. We work with a range of materials and treatment options, aiming for comfort, stability and a natural look.",
+    "Valoración odontológica": "Dental Assessment",
+    "Realizamos una evaluación integral de dientes, encías, tejidos blandos y estructuras de soporte. Esta valoración permite identificar posibles problemas, establecer un diagnóstico y recomendar un plan de tratamiento personalizado, con el seguimiento que requiera cada caso.": "We carry out a comprehensive assessment of your teeth, gums, soft tissues and supporting structures. This helps us identify potential problems, make a diagnosis and recommend a personalized treatment plan, with follow-up care as needed.",
+    "Tratamiento del bruxismo": "Bruxism Management",
+    "Ofrecemos férulas de protección dental diseñadas según las necesidades de cada paciente. Estas ayudan a proteger los dientes del desgaste asociado con el bruxismo y se seleccionan de acuerdo con una valoración odontológica individual.": "We offer dental splints designed to suit each patient’s needs. These help protect teeth from wear associated with grinding and clenching (bruxism) and are selected based on an individual dental assessment.",
+    "Retenedores dentales": "Dental Retainers",
+    "Diseñamos retenedores personalizados para ayudar a mantener la posición de los dientes después de un tratamiento de ortodoncia. Cada retenedor se adapta a las necesidades del paciente, con indicaciones específicas para conservar los resultados obtenidos.": "We design custom retainers to help maintain the position of your teeth after orthodontic treatment. Each retainer is tailored to your needs, with specific care and wear instructions to help preserve your results."
   },
   "faqs": [
     [

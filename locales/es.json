@@ -29,118 +29,70 @@
   ],
   "services": [
     [
-      "Valoración odontológica",
-      "Revisamos tu salud dental y conversamos sobre las opciones para tu caso.",
+      "Limpieza dental",
+      "Eliminamos sarro, placa bacteriana, residuos y manchas superficiales causadas por alimentos y tabaco. Este tratamiento ayuda a mantener dientes y encías saludables, mejorando la higiene bucal y proporcionando una agradable sensación de limpieza y frescura.",
       "General y prevención",
-      "consulta revisión"
-    ],
-    [
-      "Limpieza dental / profilaxis",
-      "Eliminamos placa y sarro para ayudar a cuidar dientes y encías.",
-      "General y prevención",
-      "limpieza"
+      "profilaxis higiene sarro"
     ],
     [
       "Calzas y restauraciones",
-      "Restauramos dientes afectados por caries o daños.",
+      "Restauramos dientes afectados por caries, fracturas o desgaste, recuperando su forma, función y apariencia natural. Utilizamos materiales restauradores de alta calidad para conseguir resultados estéticos y funcionales adaptados a cada paciente.",
       "General y prevención",
       "calza resina caries"
     ],
     [
-      "Tratamiento de encías",
-      "Valoramos la salud de tus encías y las alternativas de atención.",
-      "General y prevención",
-      "encía periodontal"
-    ],
-    [
-      "Tratamiento de nervios / endodoncia",
-      "Valoramos el tratamiento del interior del diente según cada caso.",
-      "Otros tratamientos",
-      "nervio conducto"
-    ],
-    [
-      "Extracciones dentales",
-      "Evaluamos la extracción dental cuando es necesaria.",
-      "Otros tratamientos",
-      "extracción sacar diente"
-    ],
-    [
-      "Extracción de cordales",
-      "Valoración de cordales y atención según disponibilidad o referencia.",
-      "Otros tratamientos",
-      "muela juicio cirugía"
-    ],
-    [
-      "Radiografías dentales",
-      "Imágenes de apoyo para la valoración odontológica.",
-      "General y prevención",
-      "rayos x"
-    ],
-    [
-      "Blanqueamiento",
-      "Valoramos opciones para mejorar el color de tus dientes.",
-      "Estética dental",
-      "blanqueamiento dental"
-    ],
-    [
-      "Restauraciones estéticas",
-      "Opciones para cuidar la apariencia y función dental.",
-      "Estética dental",
-      "resinas calzas"
-    ],
-    [
-      "Coronas",
-      "Restauraciones que cubren y protegen el diente según su condición.",
+      "Prótesis dentales",
+      "Ofrecemos soluciones de prótesis dentales fijas y removibles para reemplazar piezas perdidas, recuperar la función masticatoria y mejorar la estética de la sonrisa. Cada tratamiento se adapta a las necesidades particulares del paciente.",
       "Prótesis y rehabilitación",
-      "corona"
+      "prótesis dentadura rehabilitación"
+    ],
+    [
+      "Estética dental",
+      "Realizamos tratamientos de blanqueamiento y restauraciones estéticas, incluyendo carillas de resina, disilicato de litio, porcelana feldespática y zirconia. También ofrecemos opciones de carillas ultrafinas sin preparación dental cuando el caso lo permite, buscando sonrisas naturales y armoniosas.",
+      "Estética dental",
+      "blanqueamiento carillas resina disilicato porcelana zirconia"
+    ],
+    [
+      "Prótesis removibles",
+      "Disponemos de prótesis removibles parciales y totales, elaboradas con diferentes materiales según las necesidades de cada paciente. Estas soluciones permiten reemplazar dientes ausentes y mejorar la masticación, la comodidad y la apariencia de la sonrisa.",
+      "Prótesis y rehabilitación",
+      "dentadura parcial total"
+    ],
+    [
+      "Tratamiento de nervio (endodoncia)",
+      "Tratamos dientes cuyo tejido nervioso se encuentra afectado por caries profundas, infecciones o lesiones. La endodoncia busca aliviar el dolor, tratar la infección cuando está presente y conservar la pieza dental natural siempre que sea posible.",
+      "Otros tratamientos",
+      "nervio conducto endodoncia"
+    ],
+    [
+      "Coronas dentales",
+      "Las coronas cubren y protegen dientes debilitados, fracturados o muy restaurados, devolviéndoles su forma, resistencia y funcionalidad. Ofrecemos diferentes materiales estéticos para lograr un resultado natural según las necesidades del paciente.",
+      "Prótesis y rehabilitación",
+      "corona protección"
     ],
     [
       "Prótesis fija",
-      "Alternativas fijas para recuperar la función y estética dental.",
+      "Ofrecemos alternativas de prótesis fijas para reemplazar dientes ausentes y recuperar la función masticatoria y la estética dental. Trabajamos con diferentes materiales y opciones de tratamiento, buscando comodidad, estabilidad y una apariencia natural.",
       "Prótesis y rehabilitación",
-      "puente"
+      "puente prótesis fija"
     ],
     [
-      "Prótesis removible",
-      "Opciones removibles adaptadas a las necesidades de cada paciente.",
-      "Prótesis y rehabilitación",
-      "dentadura"
-    ],
-    [
-      "Ortodoncia",
-      "Opciones sujetas a valoración profesional y disponibilidad.",
-      "Otros tratamientos",
-      "brackets alineadores"
-    ],
-    [
-      "Retenedores",
-      "Valoración de retenedores según tus necesidades.",
-      "Otros tratamientos",
-      "ortodoncia"
-    ],
-    [
-      "Atención odontológica para niños",
-      "Atención dental para niños, según sus necesidades. No atendemos bebés.",
+      "Valoración odontológica",
+      "Realizamos una evaluación integral de dientes, encías, tejidos blandos y estructuras de soporte. Esta valoración permite identificar posibles problemas, establecer un diagnóstico y recomendar un plan de tratamiento personalizado, con el seguimiento que requiera cada caso.",
       "General y prevención",
-      "infantil"
+      "consulta revisión diagnóstico"
     ],
     [
-      "Atención odontológica para adultos mayores",
-      "Atención dental personalizada para adultos mayores.",
-      "General y prevención",
-      "adulto mayor"
-    ],
-    [
-      "Atención de emergencias",
-      "Consultá la atención disponible para situaciones dentales urgentes.",
+      "Tratamiento del bruxismo",
+      "Ofrecemos férulas de protección dental diseñadas según las necesidades de cada paciente. Estas ayudan a proteger los dientes del desgaste asociado con el bruxismo y se seleccionan de acuerdo con una valoración odontológica individual.",
       "Otros tratamientos",
-      "urgencia dolor"
+      "férula rechinar apretar dientes"
     ],
     [
-      "Valoración y referencia para implantes",
-      "Valoramos tu caso y referimos el procedimiento al profesional correspondiente.",
-      "Prótesis y rehabilitación",
-      "implante cirugía"
+      "Retenedores dentales",
+      "Diseñamos retenedores personalizados para ayudar a mantener la posición de los dientes después de un tratamiento de ortodoncia. Cada retenedor se adapta a las necesidades del paciente, con indicaciones específicas para conservar los resultados obtenidos.",
+      "Otros tratamientos",
+      "retenedor ortodoncia"
     ]
   ],
   "categories": [
@@ -166,7 +118,15 @@
     "treatments": "tratamientos",
     "language": "Idioma",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "previousServices": "Servicios anteriores",
+    "nextServices": "Siguientes servicios",
+    "servicesCarousel": "Servicios dentales",
+    "serviceCardBooking": "Tocá la tarjeta para agendar una cita",
+    "loadMoreServices": "Cargar más",
+    "serviceBooking": "Agendar cita",
+    "serviceContact": "Contactar",
+    "servicesShown": "Mostrando {visible} de {total} servicios"
   },
   "text": {
     "Clínica Dental": "Clínica Dental",
@@ -204,10 +164,6 @@
     "Calzas y restauraciones": "Calzas y restauraciones",
     "Prótesis dentales": "Prótesis dentales",
     "Estética dental": "Estética dental",
-    "Eliminamos el sarro y la placa acumulada para ayudar a mantener tus dientes y encías saludables.": "Eliminamos el sarro y la placa acumulada para ayudar a mantener tus dientes y encías saludables.",
-    "Restauramos dientes afectados por caries o daños, cuidando su función y apariencia natural.": "Restauramos dientes afectados por caries o daños, cuidando su función y apariencia natural.",
-    "Opciones de prótesis fijas y removibles para ayudarte a recuperar la función y estética de tu sonrisa.": "Opciones de prótesis fijas y removibles para ayudarte a recuperar la función y estética de tu sonrisa.",
-    "Tratamientos como blanqueamientos y restauraciones estéticas para mejorar la apariencia de tus dientes.": "Tratamientos como blanqueamientos y restauraciones estéticas para mejorar la apariencia de tus dientes.",
     "Ver todos los servicios": "Ver todos los servicios",
     "Te atiende la": "Te atiende la",
     "Dra. Maday Pallares": "Dra. Maday Pallares",
@@ -256,7 +212,25 @@
     "Filtrar servicios por categoría": "Filtrar servicios por categoría",
     "No encontramos tratamientos con esa búsqueda.": "No encontramos tratamientos con esa búsqueda.",
     "Limpiar búsqueda": "Limpiar búsqueda",
-    "Ubicación de Clínica Dental Dra. Maday Pallares González": "Ubicación de Clínica Dental Dra. Maday Pallares González"
+    "Ubicación de Clínica Dental Dra. Maday Pallares González": "Ubicación de Clínica Dental Dra. Maday Pallares González",
+    "Eliminamos sarro, placa bacteriana, residuos y manchas superficiales causadas por alimentos y tabaco. Este tratamiento ayuda a mantener dientes y encías saludables, mejorando la higiene bucal y proporcionando una agradable sensación de limpieza y frescura.": "Eliminamos sarro, placa bacteriana, residuos y manchas superficiales causadas por alimentos y tabaco. Este tratamiento ayuda a mantener dientes y encías saludables, mejorando la higiene bucal y proporcionando una agradable sensación de limpieza y frescura.",
+    "Restauramos dientes afectados por caries, fracturas o desgaste, recuperando su forma, función y apariencia natural. Utilizamos materiales restauradores de alta calidad para conseguir resultados estéticos y funcionales adaptados a cada paciente.": "Restauramos dientes afectados por caries, fracturas o desgaste, recuperando su forma, función y apariencia natural. Utilizamos materiales restauradores de alta calidad para conseguir resultados estéticos y funcionales adaptados a cada paciente.",
+    "Ofrecemos soluciones de prótesis dentales fijas y removibles para reemplazar piezas perdidas, recuperar la función masticatoria y mejorar la estética de la sonrisa. Cada tratamiento se adapta a las necesidades particulares del paciente.": "Ofrecemos soluciones de prótesis dentales fijas y removibles para reemplazar piezas perdidas, recuperar la función masticatoria y mejorar la estética de la sonrisa. Cada tratamiento se adapta a las necesidades particulares del paciente.",
+    "Realizamos tratamientos de blanqueamiento y restauraciones estéticas, incluyendo carillas de resina, disilicato de litio, porcelana feldespática y zirconia. También ofrecemos opciones de carillas ultrafinas sin preparación dental cuando el caso lo permite, buscando sonrisas naturales y armoniosas.": "Realizamos tratamientos de blanqueamiento y restauraciones estéticas, incluyendo carillas de resina, disilicato de litio, porcelana feldespática y zirconia. También ofrecemos opciones de carillas ultrafinas sin preparación dental cuando el caso lo permite, buscando sonrisas naturales y armoniosas.",
+    "Prótesis removibles": "Prótesis removibles",
+    "Disponemos de prótesis removibles parciales y totales, elaboradas con diferentes materiales según las necesidades de cada paciente. Estas soluciones permiten reemplazar dientes ausentes y mejorar la masticación, la comodidad y la apariencia de la sonrisa.": "Disponemos de prótesis removibles parciales y totales, elaboradas con diferentes materiales según las necesidades de cada paciente. Estas soluciones permiten reemplazar dientes ausentes y mejorar la masticación, la comodidad y la apariencia de la sonrisa.",
+    "Tratamiento de nervio (endodoncia)": "Tratamiento de nervio (endodoncia)",
+    "Tratamos dientes cuyo tejido nervioso se encuentra afectado por caries profundas, infecciones o lesiones. La endodoncia busca aliviar el dolor, tratar la infección cuando está presente y conservar la pieza dental natural siempre que sea posible.": "Tratamos dientes cuyo tejido nervioso se encuentra afectado por caries profundas, infecciones o lesiones. La endodoncia busca aliviar el dolor, tratar la infección cuando está presente y conservar la pieza dental natural siempre que sea posible.",
+    "Coronas dentales": "Coronas dentales",
+    "Las coronas cubren y protegen dientes debilitados, fracturados o muy restaurados, devolviéndoles su forma, resistencia y funcionalidad. Ofrecemos diferentes materiales estéticos para lograr un resultado natural según las necesidades del paciente.": "Las coronas cubren y protegen dientes debilitados, fracturados o muy restaurados, devolviéndoles su forma, resistencia y funcionalidad. Ofrecemos diferentes materiales estéticos para lograr un resultado natural según las necesidades del paciente.",
+    "Prótesis fija": "Prótesis fija",
+    "Ofrecemos alternativas de prótesis fijas para reemplazar dientes ausentes y recuperar la función masticatoria y la estética dental. Trabajamos con diferentes materiales y opciones de tratamiento, buscando comodidad, estabilidad y una apariencia natural.": "Ofrecemos alternativas de prótesis fijas para reemplazar dientes ausentes y recuperar la función masticatoria y la estética dental. Trabajamos con diferentes materiales y opciones de tratamiento, buscando comodidad, estabilidad y una apariencia natural.",
+    "Valoración odontológica": "Valoración odontológica",
+    "Realizamos una evaluación integral de dientes, encías, tejidos blandos y estructuras de soporte. Esta valoración permite identificar posibles problemas, establecer un diagnóstico y recomendar un plan de tratamiento personalizado, con el seguimiento que requiera cada caso.": "Realizamos una evaluación integral de dientes, encías, tejidos blandos y estructuras de soporte. Esta valoración permite identificar posibles problemas, establecer un diagnóstico y recomendar un plan de tratamiento personalizado, con el seguimiento que requiera cada caso.",
+    "Tratamiento del bruxismo": "Tratamiento del bruxismo",
+    "Ofrecemos férulas de protección dental diseñadas según las necesidades de cada paciente. Estas ayudan a proteger los dientes del desgaste asociado con el bruxismo y se seleccionan de acuerdo con una valoración odontológica individual.": "Ofrecemos férulas de protección dental diseñadas según las necesidades de cada paciente. Estas ayudan a proteger los dientes del desgaste asociado con el bruxismo y se seleccionan de acuerdo con una valoración odontológica individual.",
+    "Retenedores dentales": "Retenedores dentales",
+    "Diseñamos retenedores personalizados para ayudar a mantener la posición de los dientes después de un tratamiento de ortodoncia. Cada retenedor se adapta a las necesidades del paciente, con indicaciones específicas para conservar los resultados obtenidos.": "Diseñamos retenedores personalizados para ayudar a mantener la posición de los dientes después de un tratamiento de ortodoncia. Cada retenedor se adapta a las necesidades del paciente, con indicaciones específicas para conservar los resultados obtenidos."
   },
   "seo": {
     "home": {

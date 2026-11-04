@@ -90,3 +90,33 @@ em{font-weight:500;font-style:italic;font-size:1.08em}
   .hero-actions .button,.center-actions .button,.location-actions .button{width:100%}
   .center-actions,.location-actions{flex-direction:column;gap:10px;align-items:stretch}
 }
+
+/* Catalog integrated into the home section. */
+#servicios{scroll-margin-top:90px}
+.services .listing-card h3{font-size:19px;font-weight:500;letter-spacing:-.02em;line-height:1.3;margin:8px 0}
+.services .listing-card{min-width:0;overflow-wrap:break-word}
+.services .filter-chips button:focus-visible{outline:3px solid #79c4ed;outline-offset:3px}
+.services .listing-card[hidden]{display:none}
+@media(max-width:680px){.services .services-list{align-items:start}}
+
+/* The entire service card is one native, keyboard-accessible booking link. */
+.services a.listing-card{color:var(--ink);text-decoration:none;cursor:pointer}
+.service-booking-hint{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;margin-top:auto;color:#237aa9;font-size:14px;font-weight:600;line-height:1.5}
+.service-booking-hint svg{width:20px;height:20px;flex:0 0 20px}
+.services a.listing-card:focus-visible{outline:3px solid #237aa9;outline-offset:4px;background:#dcecf6}
+.services a.listing-card:active{background:#d3e8f4}
+
+/* Show every category on mobile without horizontal scrolling. */
+@media(max-width:680px){
+  .services .filter-chips{flex-wrap:wrap;overflow:visible;justify-content:flex-start;gap:8px}
+  .services .filter-chips button{min-height:44px;height:auto;max-width:100%;padding:10px 15px;white-space:normal;line-height:1.4}
+}
+.services-actions{flex-wrap:wrap}
+.services-actions [hidden]{display:none}
+.services-actions .button{min-height:48px;height:auto;padding-block:12px;white-space:normal;text-align:center}
+
+.services-actions #load-more-services{min-width:0;min-height:42px;height:42px;padding:10px 20px;gap:10px;background:#fff;color:var(--navy);border:1px solid var(--control-border);border-radius:var(--control-radius);font-size:14px;font-weight:600}
+.services-actions #load-more-services:hover{background:#e2f0f8;border-color:var(--control-border-hover)}
+.services-actions #load-more-services:focus-visible{outline:3px solid #79c4ed;outline-offset:3px}
+.load-more-arrow{font-size:17px;line-height:1;color:#237aa9}
+.services-actions:has(#load-more-services[hidden]){display:none}
