@@ -47,7 +47,8 @@ if (reviewCard && VERIFIED_REVIEWS.length) {
     identity.append(author, date); head.append(avatar, identity);
     const stars = document.createElement('div'); stars.className = 'review-stars'; stars.setAttribute('aria-label', `${review.rating} de 5`); stars.textContent = '★'.repeat(review.rating);
     const quote = document.createElement('p'); quote.className = 'review-text'; quote.textContent = `“${review.text}”`;
-    const source = document.createElement('a'); source.className = 'review-source'; source.href = review.url || CLINIC.maps; source.target = '_blank'; source.rel = 'noreferrer'; source.textContent = t('google');
+    const source = document.createElement('a'); source.className = 'review-source'; source.href = review.url || CLINIC.maps; source.target = '_blank'; source.rel = 'noreferrer'; source.setAttribute('aria-label', t('google'));
+    const googleLogo = document.createElement('img'); googleLogo.className = 'review-google'; googleLogo.src = '/assets/reviews/google-reviews.png'; googleLogo.alt = 'Google Reviews'; googleLogo.loading = 'lazy'; source.append(googleLogo);
     reviewCard.append(mark, head, stars, quote, source);
     if (VERIFIED_REVIEWS.length > 1) {
       const controls = document.createElement('div'); controls.className = 'review-controls';
@@ -64,7 +65,7 @@ if (reviewCard && VERIFIED_REVIEWS.length) {
   renderReview();
 }
 const TOOTH_ICON = '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 6c-3-2-8-2-10 2-2 4 0 8 1 11s1 8 4 8c2 0 2-7 5-7s3 7 5 7c3 0 3-5 4-8s3-7 1-11c-2-4-7-4-10-2Z"/></svg>';
-document.querySelectorAll('.service-card > [data-lucide]').forEach((icon, index) => { if (index < 3) icon.outerHTML = TOOTH_ICON; });
+// Each home service card keeps its own distinct icon (cleaning, restoration, prosthetics, aesthetics).
 const accordion = document.querySelector('#accordion');
 if (accordion) accordion.replaceChildren();
 if (accordion) FAQS.forEach(([question, answer], index) => {
