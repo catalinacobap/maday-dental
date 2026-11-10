@@ -136,7 +136,7 @@ def translate(root, lang, data):
 def metadata(head, lang, page, data):
     seo=data['seo'][page]; url=origin+paths[lang][page]
     head.children.extend(fragment('<title>'+html.escape(seo['title'])+'</title>'))
-    head.children.extend(fragment('<meta name="author" content="Clínica Dental Dra. Maday Pallares G."><meta name="theme-color" content="#173f42"><meta name="geo.region" content="CR-A"><meta name="geo.placename" content="Santa Clara, San Carlos, Alajuela"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest">'))
+    head.children.extend(fragment('<meta name="author" content="Clínica Dental Dra. Maday Pallares G."><meta name="theme-color" content="#072a63"><meta name="geo.region" content="CR-A"><meta name="geo.placename" content="Santa Clara, San Carlos, Alajuela"><link rel="icon" href="/assets/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/assets/favicon.png"><link rel="manifest" href="/site.webmanifest">'))
     def meta(key,value,prop=False): head.children.append(Node('meta', [('property' if prop else 'name',key),('content',value)]))
     meta('description',seo['description']); meta('robots','index, follow' if origin else 'noindex, nofollow')
     for key,value in {'title':seo['title'],'description':seo['description'],'type':'website','site_name':'Clínica Dental Dra. Maday Pallares G.','locale':'es_CR' if lang=='es' else 'en_US','locale:alternate':'en_US' if lang=='es' else 'es_CR','image:alt':seo['title'],'image:width':'1200','image:height':'630'}.items(): meta('og:'+key,value,True)
