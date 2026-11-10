@@ -136,6 +136,7 @@ def translate(root, lang, data):
 def metadata(head, lang, page, data):
     seo=data['seo'][page]; url=origin+paths[lang][page]
     head.children.extend(fragment('<title>'+html.escape(seo['title'])+'</title>'))
+    head.children.extend(fragment('<meta name="author" content="Clínica Dental Dra. Maday Pallares G."><meta name="theme-color" content="#173f42"><meta name="geo.region" content="CR-A"><meta name="geo.placename" content="Santa Clara, San Carlos, Alajuela"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest">'))
     def meta(key,value,prop=False): head.children.append(Node('meta', [('property' if prop else 'name',key),('content',value)]))
     meta('description',seo['description']); meta('robots','index, follow' if origin else 'noindex, nofollow')
     for key,value in {'title':seo['title'],'description':seo['description'],'type':'website','site_name':'Clínica Dental Dra. Maday Pallares G.','locale':'es_CR' if lang=='es' else 'en_US','locale:alternate':'en_US' if lang=='es' else 'es_CR','image:alt':seo['title'],'image:width':'1200','image:height':'630'}.items(): meta('og:'+key,value,True)
@@ -148,8 +149,8 @@ def metadata(head, lang, page, data):
         meta('og:url',url,True); meta('og:image',origin+f'/assets/og-{lang}.jpg',True); meta('twitter:image',origin+f'/assets/og-{lang}.jpg')
     else:
         meta('og:image',f'/assets/og-{lang}.jpg',True); meta('twitter:image',f'/assets/og-{lang}.jpg')
-    business={'@context':'https://schema.org','@type':'Dentist','name':'Clínica Dental Dra. Maday Pallares G.','description':seo['description'],'telephone':'+50670162252','address':{'@type':'PostalAddress','streetAddress':'Santa Clara, Florencia','addressLocality':'San Carlos','addressRegion':'Alajuela','postalCode':'21002','addressCountry':'CR'},'hasMap':data['clinic']['maps'],'openingHoursSpecification':[{'@type':'OpeningHoursSpecification','dayOfWeek':['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens':'09:30','closes':'18:30'},{'@type':'OpeningHoursSpecification','dayOfWeek':'Saturday','opens':'10:00','closes':'15:00'}],'knowsLanguage':['es-CR','en']}
-    if origin: business.update(url=origin+paths[lang]['home'],logo=origin+'/assets/logo-clinica.png',image=origin+'/assets/dra-maday-pallares-960.webp')
+    business={'@context':'https://schema.org','@graph':[{'@type':'Dentist','@id':(url+'#clinic'),'name':'Clínica Dental Dra. Maday Pallares G.','description':seo['description'],'telephone':'+50670162252','priceRange':'$$','address':{'@type':'PostalAddress','streetAddress':'Santa Clara, Florencia','addressLocality':'San Carlos','addressRegion':'Alajuela','postalCode':'21002','addressCountry':'CR'},'hasMap':data['clinic']['maps'],'areaServed':['San Carlos','Santa Clara','Florencia','Alajuela'],'openingHoursSpecification':[{'@type':'OpeningHoursSpecification','dayOfWeek':['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens':'09:30','closes':'18:30'},{'@type':'OpeningHoursSpecification','dayOfWeek':'Saturday','opens':'10:00','closes':'15:00'}],'knowsLanguage':['es-CR','en']},{'@type':'WebSite','@id':(url+'#website'),'url':url,'name':'Clínica Dental Dra. Maday Pallares G.','inLanguage':data['locale']}]}
+    if origin: business['@graph'][0].update(url=url,logo=origin+'/assets/logo-clinica.png',image=origin+'/assets/dra-maday-pallares-960.webp'); business['@graph'][1]['url']=origin+paths[lang]['home']
     head.children.append(Node('script',[('type','application/ld+json')],[json.dumps(business,ensure_ascii=False)]))
 
 def render(lang,page):
