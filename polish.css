@@ -120,3 +120,29 @@ em{font-weight:500;font-style:italic;font-size:1.08em}
 .services-actions #load-more-services:focus-visible{outline:3px solid #79c4ed;outline-offset:3px}
 .load-more-arrow{font-size:17px;line-height:1;color:#237aa9}
 .services-actions:has(#load-more-services[hidden]){display:none}
+
+/* Clinic facade photo above the map */
+.clinic-facade{margin:0 0 56px}
+.clinic-facade img{display:block;width:100%;height:auto;aspect-ratio:1600/598;object-fit:cover;border-radius:22px;background:#cfe5ec}
+.clinic-facade figcaption{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;color:var(--muted);font-size:15px;text-align:center}
+.clinic-facade figcaption svg{width:16px;height:16px;color:#378db9;flex:0 0 auto}
+@media(max-width:680px){
+.clinic-facade{margin-bottom:32px}
+.clinic-facade img{aspect-ratio:4/3;object-position:42% 50%;border-radius:16px}
+.clinic-facade figcaption{font-size:14px}
+}
+
+/* Hero photo carousel (auto-rotating crossfade) */
+.hero-image .hero-slide{opacity:0;transition:opacity 1.2s ease}
+.hero-image .hero-slide.is-active{opacity:1}
+.hero-image{aspect-ratio:3/2}
+.hero-image .hero-slide-facade{object-position:6% 50%}
+@media(prefers-reduced-motion:reduce){.hero-image .hero-slide{transition:none}}
+.hero-progress{position:absolute;left:16px;right:16px;bottom:16px;z-index:2;display:flex;gap:8px}
+.hero-progress button{flex:1;height:20px;padding:8px 0;border:0;background:none;cursor:pointer}
+.hero-progress button span{display:block;height:4px;border-radius:4px;background:rgba(255,255,255,.45);overflow:hidden;box-shadow:0 1px 4px rgba(3,36,89,.25)}
+.hero-progress button i{display:block;height:100%;width:0;background:#fff;border-radius:inherit}
+.hero-progress button.is-done i{width:100%}
+.hero-progress button.is-active i{animation:hero-fill var(--hero-interval,6s) linear forwards}
+.hero-progress button:focus-visible{outline:2px solid #fff;outline-offset:2px;border-radius:4px}
+@keyframes hero-fill{from{width:0}to{width:100%}}

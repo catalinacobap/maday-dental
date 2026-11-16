@@ -113,7 +113,7 @@ def prepare(page):
         map_node=find(root,lambda n:n.has('map-pattern'))
         replacement=fragment('<iframe class="clinic-map" title="Ubicación de Clínica Dental Dra. Maday Pallares González" src="https://maps.google.com/maps?q=10.3615575,-84.4977497&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>')[0]
         map_node.tag,map_node.attrs,map_node.children=replacement.tag,replacement.attrs,replacement.children
-        for image in [n for n in root.walk() if n.tag=='img' and 'assets/' in n.attrs.get('src','') and 'logo' not in n.attrs['src']]:
+        for image in [n for n in root.walk() if n.tag=='img' and 'assets/' in n.attrs.get('src','') and 'logo' not in n.attrs['src'] and 'fachada' not in n.attrs['src']]:
             hero='atencion' in image.attrs['src']; stem='atencion-dental' if hero else 'dra-maday-pallares'
             image.attrs.update(src=f'/assets/{stem}-960.webp',srcset=f'/assets/{stem}-480.webp 480w, /assets/{stem}-960.webp 960w',sizes='(max-width: 680px) calc(100vw - 40px), (max-width: 1200px) 45vw, 560px')
             image.attrs['alt']='Atención odontológica en la clínica de la Dra. Maday Pallares en San Carlos' if hero else 'Dra. Maday Pallares González en su consultorio dental en San Carlos'

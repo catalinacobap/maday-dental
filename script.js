@@ -109,3 +109,41 @@ const badge = document.querySelector('.eyebrow');
 if (badge) badge.innerHTML = TOOTH_ICON + t('specialty');
 document.querySelectorAll('.footer-bottom span:first-child').forEach(node => node.textContent = `© ${new Date().getFullYear()} Clínica Dental Dra. Maday Pallares G.`);
 if (window.lucide) lucide.createIcons();
+
+// Hero carousel: crossfade between photos; progress bars show time left until the next one.
+(() => {
+  const frame = document.querySelector('[data-hero-carousel]');
+  if (!frame) return;
+  const slides = [...frame.querySelectorAll('.hero-slide')];
+  if (slides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const interval = 4000;
+  const english = document.documentElement.lang.startsWith('en');
+  slides.forEach(img => { img.loading = 'eager'; });
+  frame.style.setProperty('--hero-interval', interval + 'ms');
+  const progress = document.createElement('div');
+  progress.className = 'hero-progress';
+  const bars = slides.map((_, i) => {
+    const bar = document.createElement('button');
+    bar.type = 'button';
+    bar.setAttribute('aria-label', (english ? 'Show photo ' : 'Ver foto ') + (i + 1));
+    bar.innerHTML = '<span><i></i></span>';
+    bar.addEventListener('click', () => show(i));
+    bar.querySelector('i').addEventListener('animationend', () => show((current + 1) % slides.length));
+    progress.append(bar);
+    return bar;
+  });
+  frame.append(progress);
+  let current = 0;
+  function show(index) {
+    current = index;
+    slides.forEach((img, i) => img.classList.toggle('is-active', i === index));
+    bars.forEach((bar, i) => {
+      bar.classList.remove('is-active');
+      bar.classList.toggle('is-done', i < index);
+      bar.setAttribute('aria-current', i === index ? 'true' : 'false');
+    });
+    void bars[index].offsetWidth; // restart the fill animation
+    bars[index].classList.add('is-active');
+  }
+  show(0);
+})();
